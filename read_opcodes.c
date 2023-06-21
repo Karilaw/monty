@@ -36,6 +36,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			pop(stack, line_number);
 		}
+		else if (strcmp(opcode, "swap") == 0)
+		{
+			swap(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

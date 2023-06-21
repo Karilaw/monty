@@ -42,5 +42,6 @@ FILE *open_file(char *filename);
 void process_opcodes(FILE *fp, stack_t **stack);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
 int main(int argc, char **argv);
 #endif

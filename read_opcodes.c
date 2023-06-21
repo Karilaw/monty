@@ -28,6 +28,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			pall(stack, line_number);
 		}
+		else if (strcmp(opcode, "pint") == 0)
+		{
+			pint(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

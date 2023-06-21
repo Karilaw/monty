@@ -44,6 +44,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			add(stack, line_number);
 		}
+		else if (strcmp(opcode, "nop") == 0)
+		{
+			nop(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

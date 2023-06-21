@@ -60,6 +60,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			mul(stack, line_number);
 		}
+		else if (strcmp(opcode, "mod") == 0)
+		{
+			mod(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

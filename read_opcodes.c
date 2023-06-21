@@ -58,7 +58,7 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		}
 		else if (strcmp(opcode, "mul") == 0)
 		{
-			mul_stack(stack, line_number);
+			mul(stack, line_number);
 		}
 		else
 		{

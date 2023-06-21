@@ -1,11 +1,11 @@
 #include "monty.h"
+
 /**
  * push - pushes an element to the stack
  * @stack: double pointer to the top of the stack
  * @line_number: line number of the opcode in the file
  * @n_str: string representing the integer to be pushed onto the stack
- * Description: If n_str is not an integer or if there is no argument given,
- * print an error message and exit with a failure status.
+ * Description: push and prints elements
  */
 void push(stack_t **stack, unsigned int line_number, char *n_str)
 {

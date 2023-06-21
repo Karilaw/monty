@@ -48,6 +48,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			nop(stack, line_number);
 		}
+		else if (strcmp(opcode, "sub") == 0)
+		{
+			sub(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

@@ -40,6 +40,10 @@ void process_opcodes(FILE *fp, stack_t **stack)
 		{
 			swap(stack, line_number);
 		}
+		else if (strcmp(opcode, "add") == 0)
+		{
+			add(stack, line_number);
+		}
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",

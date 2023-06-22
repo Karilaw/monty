@@ -1,5 +1,11 @@
 #include "monty.h"
-
+/**
+ * mod - computes the rest of the division of the second top element of
+ * the stack by the top element of the stack
+ * @stack: double pointer to the top of the stack
+ * @line_number: line number of the current opcode
+ * Return: void
+ */
 void mod(stack_t **stack, unsigned int line_number)
 {
 	int mod;

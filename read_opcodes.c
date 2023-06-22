@@ -15,10 +15,9 @@ void process_opcodes(FILE *fp, stack_t **stack)
 	while (fgets(buffer, BUFFER_SIZE, fp) != NULL)
 	{
 		line_number++;
-		opcode = strtok(buffer, " \n\t");
-		if (opcode == NULL || *opcode == '#')
+		if (is_comment(buffer))
 			continue;
-
+		opcode = strtok(buffer, " \n\t");
 		if (strcmp(opcode, "push") == 0)
 		{
 			n_str = strtok(NULL, " \n\t");

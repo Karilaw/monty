@@ -49,5 +49,6 @@ void sub(stack_t **stack, unsigned int line_number);
 void div_stack(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
+int is_comment(char *line);
 int main(int argc, char **argv);
 #endif

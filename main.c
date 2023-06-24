@@ -19,6 +19,7 @@ int main(int argc, char **argv)
 	}
 
 	fp = open_file(argv[1]);
+	free_stack(&stack);
 	process_opcodes(fp, &stack);
 
 	fclose(fp);
